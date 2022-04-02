@@ -1,0 +1,6 @@
+use warnings;
+sub main {
+	my $file = 'C:\tutorial\perl\mymanjeeves.txt';
+	# Either successfully open the file or else die (stop the program)
+	# Read each LINE from the file, one LINE at a time.
+main();
