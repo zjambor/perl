@@ -1,0 +1,35 @@
+\curl -L https://install.perlbrew.pl | bash
+
+mv ~/perl5 /opt
+chmod -R 777 /opt/perl5
+export PERLBREW_HOME=/opt/perlbrew
+export PERLBREW_ROOT=/opt/perl5/perlbrew
+source /opt/perl5/perlbrew/etc/bashrc
+#perlbrew use perl-5.18.4
+
+env | grep PERL
+which perlbrew
+perlbrew available
+perlbrew install perl-5.18.4
+perlbrew switch perl-5.18.4
+
+perlbrew install-cpanm
+cpanm DBI
+cpanm LWP
+perlbrew list-modules
+
+
+zypper install perl-DBI
+zypper install perl-XML-Parser
+zypper install perl-Test-Exception
+zypper install perl-DBI
+zypper install perl-Net-Daemon
+zypper install perl-XML-LibXML perl-XML-XPath
+zypper install perl-DBD-SQLite
+zypper install perl-XML-SAX perl-XML-SAX-Base perl-XML-NamespaceSupport perl-XML-Simple
+
+
+
+
+
+
